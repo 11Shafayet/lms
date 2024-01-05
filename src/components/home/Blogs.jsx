@@ -51,7 +51,7 @@ const Blogs = () => {
               disableOnInteraction: false,
             }}
             modules={[Autoplay, Navigation]}
-            className="mySwiper mt-6 py-12 max-w-[1200px] mx-auto px-4 relative z-10"
+            className="mySwiper mt-6 py-12 max-w-[90%] mx-auto px-4 relative z-10"
           >
             {blogs?.map((item, i) => (
               <SwiperSlide key={i}>

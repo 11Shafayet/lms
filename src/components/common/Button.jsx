@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-const Button = ({ children, type }) => {
+const Button = ({ children, type, isSubmit }) => {
   return (
     <button
+      type={isSubmit && 'submit'}
       className={`flex items-center gap-x-2 rounded-full border-2 ${
         !type
           ? 'border-primary text-primary hover:bg-primary hover:text-white'

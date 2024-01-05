@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
 import { allCourses } from '../data';
 
 import Sidebar from '../components/singleCourse/Sidebar';
@@ -25,11 +24,10 @@ const SingleCoursePage = () => {
     }
   }, [path, data]);
 
-
   return (
     <>
       {data.id && (
-        <div >
+        <div>
           <div
             className="relative z-10 bg-cover bg-center bg-no-repeat flex justify-center items-center min-h-[60vh]"
             style={{ backgroundImage: `url(${data.banner})` }}
@@ -53,19 +51,6 @@ const SingleCoursePage = () => {
               </div>
             </div>
           </div>
-
-          <ToastContainer
-            position="bottom-center"
-            autoClose={1000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-          />
         </div>
       )}
     </>

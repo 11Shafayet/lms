@@ -1,8 +1,25 @@
 import { Link } from 'react-router-dom';
 import img25 from '/images/25.jpg';
 import Button from '../common/Button';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Subscribe = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!name || !phone || !email) {
+      toast.warning('All field is required.');
+    } else {
+      console.log(name, email, phone);
+      toast.success('Form was sent Successfully!');
+    }
+  };
+
   return (
     <div
       className="my-12 min-h-[60vh] bg-cover bg-center bg-no-repeat flex items-center justify-center relative py-12 z-10"
@@ -27,6 +44,7 @@ const Subscribe = () => {
           <div className="w-full">
             <form
               action=""
+              onSubmit={handleSubmit}
               className="bg-white shadow-light p-12 lg:p-20 rounded-md"
             >
               <h4 className="text-3xl font-medium font-secondary max-w-[500px] text-center mx-auto">
@@ -41,6 +59,8 @@ const Subscribe = () => {
                   type="text"
                   placeholder="Shafayetur Rahman"
                   className="input-with-shadow w-full mt-2"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="mt-4">
@@ -52,6 +72,8 @@ const Subscribe = () => {
                   type="tel"
                   placeholder="+8801638-719578"
                   className="input-with-shadow w-full mt-2"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <div className="mt-4">
@@ -63,10 +85,12 @@ const Subscribe = () => {
                   type="email"
                   placeholder="11shafayet@gmail.com"
                   className="input-with-shadow w-full mt-2"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="mt-6">
-                <Button>Subscribe Now</Button>
+                <Button isSubmit="submit">Subscribe Now</Button>
               </div>
             </form>
           </div>
