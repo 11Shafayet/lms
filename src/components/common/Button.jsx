@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
-const Button = ({ children }) => {
+const Button = ({ children, type }) => {
   return (
-    <button className="flex items-center gap-x-2 bg-gradient-to-br from-[#FF672F] to-[#F45B22] text-white py-4 px-12">
+    <button
+      className={`flex items-center gap-x-2 rounded-full border-2 ${
+        !type
+          ? 'border-primary text-primary hover:bg-primary hover:text-white'
+          : 'border-white text-white hover:bg-white hover:text-primary'
+      } font-medium py-4 px-12 duration-500`}
+    >
       {children}
     </button>
   );

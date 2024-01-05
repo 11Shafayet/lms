@@ -1,3 +1,39 @@
+import img1 from '/images/1.jpg';
+import img2 from '/images/2.jpg';
+import img3 from '/images/3.jpg';
+import img4 from '/images/4.jpg';
+import img5 from '/images/5.jpg';
+import img6 from '/images/6.jpg';
+import img7 from '/images/7.jpg';
+import img8 from '/images/8.jpg';
+import img9 from '/images/9.jpg';
+import img10 from '/images/10.jpg';
+import img11 from '/images/11.jpg';
+import img12 from '/images/12.jpg';
+import img13 from '/images/13.jpg';
+import img14 from '/images/14.jpg';
+import img15 from '/images/15.jpg';
+import img16 from '/images/16.jpg';
+import img17 from '/images/17.jpg';
+import img18 from '/images/18.jpg';
+import img19 from '/images/19.jpg';
+import img20 from '/images/20.jpg';
+import img21 from '/images/21.jpg';
+import img22 from '/images/22.jpg';
+import img23 from '/images/23.jpg';
+import img24 from '/images/24.jpg';
+import img25 from '/images/25.jpg';
+import img26 from '/images/26.jpg';
+import img27 from '/images/27.jpg';
+import img28 from '/images/28.jpg';
+import img29 from '/images/29.jpg';
+import img30 from '/images/30.jpg';
+
+import review1 from '/images/review1.jpg';
+import review2 from '/images/review2.jpg';
+import review3 from '/images/review3.jpg';
+import review4 from '/images/review4.jpg';
+
 export const navData = [
   {
     title: 'Home',
@@ -18,44 +54,6 @@ export const navData = [
   {
     title: 'Contact',
     link: '/contact',
-  },
-];
-
-export const testimonials = [
-  {
-    title: 'Clean And Comfortable',
-    rating: 5,
-    review:
-      'Ab architecto consequuntur fugiat sit corporis tenetur ea repellendus nobis, assumenda asperiores veritatis iste eos rem adipisci nulla doloribus nemo quas eligendi reiciendis ratione delectus quidem modi!',
-    name: 'Gloriya Floes, Shikago',
-  },
-  {
-    title: 'Best Price Assured',
-    rating: 5,
-    review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatem corrupti consequuntur non pariatur fuga, velit dignissimos mollitia illo ducimus exercitationem nostrum, at itaque doloremque minima debitis a nulla reprehenderit est, dolores dolorum officiis saepe!',
-    name: 'Madison Edwar, New York',
-  },
-  {
-    title: 'Smooth Car Transport',
-    rating: 5,
-    review:
-      'Illo quasi aspernatur voluptatem suscipit vel provident maiores debitis sint aperiam deserunt doloribus architecto, eum odit autem quis magni, nisi labore quos enim corporis velit eveniet reprehenderit repellendus distinctio.',
-    name: 'Eloine Maloine, Auburn',
-  },
-  {
-    title: 'Best Price Assured',
-    rating: 5,
-    review:
-      'Maiores, atque sint ratione numquam eum quia ex molestias accusamus a natus doloremque repudiandae id cum corporis hic dolorem nisi est praesentium reiciendis officiis dolores, odio unde! Tempore enim minus ipsam praesentium est fuga eius. Eaque doloribus aut, quo aspernatur asperiores blanditiis. ',
-    name: 'Gloriya Floes, Shikago',
-  },
-  {
-    title: 'Flexiable, Smooth and Best Service',
-    rating: 5,
-    review:
-      'Perspiciatis nesciunt reprehenderit voluptates veniam fuga obcaecati repudiandae, nam magnam. Ipsa tenetur soluta necessitatibus tempore assumenda cum sint, dolore aspernatur voluptates facere, animi eos commodi neque! Cumque enim recusandae tenetur, ea dignissimos, porro minima natus delectus quia, libero molestiae mollitia.',
-    name: 'Gloriya Floes, Shikago',
   },
 ];
 
@@ -94,5 +92,1062 @@ export const socialData = [
     icon: `<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
     <path d="M10.5 0.0833435C9.13204 0.0833435 7.7775 0.352779 6.51369 0.876265C5.24989 1.39975 4.10156 2.16704 3.13428 3.13431C1.18078 5.08782 0.083313 7.73734 0.083313 10.5C0.083313 15.1042 3.0729 19.0104 7.20831 20.3958C7.72915 20.4792 7.89581 20.1563 7.89581 19.875V18.1146C5.0104 18.7396 4.39581 16.7188 4.39581 16.7188C3.91665 15.5104 3.23956 15.1875 3.23956 15.1875C2.29165 14.5417 3.31248 14.5625 3.31248 14.5625C4.35415 14.6354 4.90623 15.6354 4.90623 15.6354C5.81248 17.2188 7.34373 16.75 7.93748 16.5C8.03123 15.8229 8.30206 15.3646 8.59373 15.1042C6.28123 14.8438 3.85415 13.9479 3.85415 9.97918C3.85415 8.82293 4.24998 7.89584 4.92706 7.15626C4.8229 6.89584 4.45831 5.81251 5.03123 4.40626C5.03123 4.40626 5.90623 4.12501 7.89581 5.46876C8.71873 5.23959 9.61456 5.12501 10.5 5.12501C11.3854 5.12501 12.2812 5.23959 13.1041 5.46876C15.0937 4.12501 15.9687 4.40626 15.9687 4.40626C16.5416 5.81251 16.1771 6.89584 16.0729 7.15626C16.75 7.89584 17.1458 8.82293 17.1458 9.97918C17.1458 13.9583 14.7083 14.8333 12.3854 15.0938C12.7604 15.4167 13.1041 16.0521 13.1041 17.0208V19.875C13.1041 20.1563 13.2708 20.4896 13.8021 20.3958C17.9375 19 20.9166 15.1042 20.9166 10.5C20.9166 9.13207 20.6472 7.77753 20.1237 6.51372C19.6002 5.24992 18.833 4.10159 17.8657 3.13431C16.8984 2.16704 15.7501 1.39975 14.4863 0.876265C13.2225 0.352779 11.8679 0.0833435 10.5 0.0833435Z" fill="#CCCCCC"/>
   </svg>`,
+  },
+];
+
+// HOME
+export const heroData = [
+  {
+    img: img5,
+    title: 'With Quantum Learn, Learning Never Ends',
+  },
+
+  {
+    img: img12,
+    title: 'Learn Remotely from anywhere',
+  },
+  {
+    img: img6,
+    title: 'Access your free course today',
+  },
+];
+
+export const testimonials = [
+  {
+    img: review1,
+    name: 'Ali Tufan',
+    review:
+      'Great Instructor. Love the course. He was explaining the topic very nicely. Surely going to suggests others to go through this course.',
+  },
+  {
+    img: review2,
+    name: 'Finn Alen',
+    review:
+      'Great Instructor. Love the course. He was explaining the topic very nicely. Surely going to suggests others to go through this course.',
+  },
+  {
+    img: review3,
+    name: 'Mohammad Ali',
+    review:
+      'Great Instructor. Love the course. He was explaining the topic very nicely. Surely going to suggests others to go through this course.',
+  },
+  {
+    img: review4,
+    name: 'Savian Smith',
+    review:
+      'Great Instructor. Love the course. He was explaining the topic very nicely. Surely going to suggests others to go through this course.',
+  },
+];
+
+// COURSES
+export const allCategories = [
+  'All',
+  'Design',
+  'Photography',
+  'Development',
+  'Business',
+  'Marketing',
+];
+
+export const allCourses = [
+  {
+    id: 1,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img1,
+    category: 'Business',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 2,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img2,
+    category: 'Photography',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 3,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img3,
+    category: 'Marketing',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 4,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img8,
+    category: 'Development',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 5,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img9,
+    category: 'Design',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 6,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img10,
+    category: 'Design',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 7,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img11,
+    category: 'Photography',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 8,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img13,
+    category: 'Photography',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 9,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img16,
+    category: 'Development',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 10,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img18,
+    category: 'Design',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 11,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img20,
+    category: 'Development',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 12,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img22,
+    category: 'Design',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 13,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img24,
+    category: 'Photography',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 14,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img25,
+    category: 'Design',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 15,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img24,
+    category: 'Development',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 16,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img29,
+    category: 'Business',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 17,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img28,
+    category: 'Photography',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+  {
+    id: 18,
+    topSeller: true,
+    title: 'Fashion Photography From Professional',
+    date: '11/04/2023',
+    rating: 4,
+    videoLink: '',
+    banner: img30,
+    category: 'Marketing',
+    price: 49.99,
+    duration: '11H:47M',
+    enrolled: 5,
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    whatWillLearn: [
+      'Become a UX designer.',
+      'You will be able to add UX designer to your CV',
+      'Become a UI designer',
+      'Build & test a full website design.',
+      'Build & test a full mobile app.',
+      'Learn to design websites & mobile phone apps.',
+      `You'll learn how to choose colors.`,
+      'Prototype your designs with interactions.',
+      'Export production ready assets.',
+      'All the techniques used by UX professionals',
+    ],
+    requirements: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+
+    topics: [
+      {
+        title: 'Introduction',
+        desc: 'The Intro Lesson',
+      },
+      {
+        title: 'Lesson 1',
+        desc: 'Lesson One',
+      },
+      {
+        title: 'Lesson 2',
+        desc: 'Lesosn 2',
+      },
+    ],
+    instructor: {
+      insImg: review1,
+      name: 'Ali Tufan',
+      designation: 'UX/UI Designer',
+    },
+  },
+];
+
+// Blogs
+export const blogs = [
+  {
+    id: 1,
+    date: '21 December, 2022',
+    img: img11,
+    title: 'World Health Day in LA 2021',
+    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi illum ipsa amet. Delectus facilis quidem ratione repellat nam. Pariatur omnis porro qui voluptates ut iure vel tempora corporis? Delectus ad dolorem odit in placeat facere veritatis, sunt nobis? Provident, sit. Neque, saepe unde ut fugit nobis voluptate quos ullam recusandae quia. Voluptatum nobis voluptates qui dignissimos laboriosam odit enim quidem voluptatibus iure! Expedita et dolore vitae nostrum itaque qui autem tenetur dolor animi neque fugit ea nihil vero cupiditate quae consequuntur, reiciendis cumque eius, inventore hic perferendis? Consequatur sit quasi eaque quis, consequuntur laborum harum, sed maiores distinctio ducimus sunt odit vero facilis accusantium magni perspiciatis! Sunt odit deserunt omnis iure esse similique cupiditate? Praesentium, itaque. Hic numquam nam voluptate explicabo incidunt fugit porro soluta laudantium? Et at, pariatur libero perspiciatis iusto, laborum corporis dolorem ut eos optio, labore molestiae nihil quos! Ullam quod saepe dolore et, quisquam corporis! Culpa eligendi similique, error placeat vel necessitatibus eum dignissimos vitae, modi quas in tenetur maiores, beatae quibusdam ullam minima dicta accusantium iusto mollitia nihil sunt veniam ducimus. Suscipit quis eaque dolorum nihil optio tempore reprehenderit sapiente distinctio reiciendis, id, adipisci dolore aperiam deserunt ex ea, aliquam provident facilis molestiae libero consequatur.`,
+    content: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+  },
+  {
+    id: 2,
+    date: '21 December, 2022',
+    img: img11,
+    title: 'World Health Day in LA 2021',
+    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi illum ipsa amet. Delectus facilis quidem ratione repellat nam. Pariatur omnis porro qui voluptates ut iure vel tempora corporis? Delectus ad dolorem odit in placeat facere veritatis, sunt nobis? Provident, sit. Neque, saepe unde ut fugit nobis voluptate quos ullam recusandae quia. Voluptatum nobis voluptates qui dignissimos laboriosam odit enim quidem voluptatibus iure! Expedita et dolore vitae nostrum itaque qui autem tenetur dolor animi neque fugit ea nihil vero cupiditate quae consequuntur, reiciendis cumque eius, inventore hic perferendis? Consequatur sit quasi eaque quis, consequuntur laborum harum, sed maiores distinctio ducimus sunt odit vero facilis accusantium magni perspiciatis! Sunt odit deserunt omnis iure esse similique cupiditate? Praesentium, itaque. Hic numquam nam voluptate explicabo incidunt fugit porro soluta laudantium? Et at, pariatur libero perspiciatis iusto, laborum corporis dolorem ut eos optio, labore molestiae nihil quos! Ullam quod saepe dolore et, quisquam corporis! Culpa eligendi similique, error placeat vel necessitatibus eum dignissimos vitae, modi quas in tenetur maiores, beatae quibusdam ullam minima dicta accusantium iusto mollitia nihil sunt veniam ducimus. Suscipit quis eaque dolorum nihil optio tempore reprehenderit sapiente distinctio reiciendis, id, adipisci dolore aperiam deserunt ex ea, aliquam provident facilis molestiae libero consequatur.`,
+    content: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+  },
+  {
+    id: 3,
+    date: '21 December, 2022',
+    img: img11,
+    title: 'World Health Day in LA 2021',
+    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi illum ipsa amet. Delectus facilis quidem ratione repellat nam. Pariatur omnis porro qui voluptates ut iure vel tempora corporis? Delectus ad dolorem odit in placeat facere veritatis, sunt nobis? Provident, sit. Neque, saepe unde ut fugit nobis voluptate quos ullam recusandae quia. Voluptatum nobis voluptates qui dignissimos laboriosam odit enim quidem voluptatibus iure! Expedita et dolore vitae nostrum itaque qui autem tenetur dolor animi neque fugit ea nihil vero cupiditate quae consequuntur, reiciendis cumque eius, inventore hic perferendis? Consequatur sit quasi eaque quis, consequuntur laborum harum, sed maiores distinctio ducimus sunt odit vero facilis accusantium magni perspiciatis! Sunt odit deserunt omnis iure esse similique cupiditate? Praesentium, itaque. Hic numquam nam voluptate explicabo incidunt fugit porro soluta laudantium? Et at, pariatur libero perspiciatis iusto, laborum corporis dolorem ut eos optio, labore molestiae nihil quos! Ullam quod saepe dolore et, quisquam corporis! Culpa eligendi similique, error placeat vel necessitatibus eum dignissimos vitae, modi quas in tenetur maiores, beatae quibusdam ullam minima dicta accusantium iusto mollitia nihil sunt veniam ducimus. Suscipit quis eaque dolorum nihil optio tempore reprehenderit sapiente distinctio reiciendis, id, adipisci dolore aperiam deserunt ex ea, aliquam provident facilis molestiae libero consequatur.`,
+    content: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+  },
+  {
+    id: 4,
+    date: '21 December, 2022',
+    img: img11,
+    title: 'World Health Day in LA 2021',
+    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi illum ipsa amet. Delectus facilis quidem ratione repellat nam. Pariatur omnis porro qui voluptates ut iure vel tempora corporis? Delectus ad dolorem odit in placeat facere veritatis, sunt nobis? Provident, sit. Neque, saepe unde ut fugit nobis voluptate quos ullam recusandae quia. Voluptatum nobis voluptates qui dignissimos laboriosam odit enim quidem voluptatibus iure! Expedita et dolore vitae nostrum itaque qui autem tenetur dolor animi neque fugit ea nihil vero cupiditate quae consequuntur, reiciendis cumque eius, inventore hic perferendis? Consequatur sit quasi eaque quis, consequuntur laborum harum, sed maiores distinctio ducimus sunt odit vero facilis accusantium magni perspiciatis! Sunt odit deserunt omnis iure esse similique cupiditate? Praesentium, itaque. Hic numquam nam voluptate explicabo incidunt fugit porro soluta laudantium? Et at, pariatur libero perspiciatis iusto, laborum corporis dolorem ut eos optio, labore molestiae nihil quos! Ullam quod saepe dolore et, quisquam corporis! Culpa eligendi similique, error placeat vel necessitatibus eum dignissimos vitae, modi quas in tenetur maiores, beatae quibusdam ullam minima dicta accusantium iusto mollitia nihil sunt veniam ducimus. Suscipit quis eaque dolorum nihil optio tempore reprehenderit sapiente distinctio reiciendis, id, adipisci dolore aperiam deserunt ex ea, aliquam provident facilis molestiae libero consequatur.`,
+    content: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
+  },
+  {
+    id: 5,
+    date: '21 December, 2022',
+    img: img11,
+    title: 'World Health Day in LA 2021',
+    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi illum ipsa amet. Delectus facilis quidem ratione repellat nam. Pariatur omnis porro qui voluptates ut iure vel tempora corporis? Delectus ad dolorem odit in placeat facere veritatis, sunt nobis? Provident, sit. Neque, saepe unde ut fugit nobis voluptate quos ullam recusandae quia. Voluptatum nobis voluptates qui dignissimos laboriosam odit enim quidem voluptatibus iure! Expedita et dolore vitae nostrum itaque qui autem tenetur dolor animi neque fugit ea nihil vero cupiditate quae consequuntur, reiciendis cumque eius, inventore hic perferendis? Consequatur sit quasi eaque quis, consequuntur laborum harum, sed maiores distinctio ducimus sunt odit vero facilis accusantium magni perspiciatis! Sunt odit deserunt omnis iure esse similique cupiditate? Praesentium, itaque. Hic numquam nam voluptate explicabo incidunt fugit porro soluta laudantium? Et at, pariatur libero perspiciatis iusto, laborum corporis dolorem ut eos optio, labore molestiae nihil quos! Ullam quod saepe dolore et, quisquam corporis! Culpa eligendi similique, error placeat vel necessitatibus eum dignissimos vitae, modi quas in tenetur maiores, beatae quibusdam ullam minima dicta accusantium iusto mollitia nihil sunt veniam ducimus. Suscipit quis eaque dolorum nihil optio tempore reprehenderit sapiente distinctio reiciendis, id, adipisci dolore aperiam deserunt ex ea, aliquam provident facilis molestiae libero consequatur.`,
+    content: [
+      'You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.',
+      'No previous design experience is needed.',
+      'No previous Adobe XD skills are needed.',
+    ],
   },
 ];

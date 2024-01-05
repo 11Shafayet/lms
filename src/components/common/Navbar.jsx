@@ -7,7 +7,7 @@ import { navData } from '../../data';
 
 const Navbar = () => {
   const { activeNav, setActiveNav } = useAuth();
-  const [hamActive, setHamActive] = useState(true);
+  const [hamActive, setHamActive] = useState(false);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Navbar = () => {
   }, [pathname, setActiveNav]);
 
   return (
-    <div className="relative shadow-md z-10">
+    <div className="relative z-10">
       {/* topbar */}
       <div className="bg-primary text-white py-2">
         <div className="container mx-auto px-4">
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       {/* navbar */}
-      <div className="bg-white !text-secondary shadow-light py-3">
+      <div className="bg-white !text-secondary shadow-lg py-3">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center gap-x-4">
             <Link to="/">
@@ -68,7 +68,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`relative top-12 w-full h-screen bg-white shadow-light p-4 flex justify-center items-start pt-32 duration-500 ${
+            className={`absolute top-36 w-full h-screen bg-white shadow-light p-4 flex justify-center items-start pt-32 duration-500 ${
               hamActive ? 'right-0' : '-right-[150%]'
             }`}
           >

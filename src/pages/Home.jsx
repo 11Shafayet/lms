@@ -1,7 +1,17 @@
+import Blogs from '../components/home/Blogs';
+import Hero from '../components/home/Hero';
+import Subscribe from '../components/home/Subscribe';
+import Testimonial from '../components/home/Testimonial';
+import TopCourses from '../components/home/TopCourses';
+
 const Home = () => {
   return (
     <>
-      <div>Hello</div>
+      <Hero />
+      <TopCourses />
+      <Subscribe />
+      <Blogs />
+      <Testimonial />
     </>
   );
 };
