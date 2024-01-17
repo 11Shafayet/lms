@@ -1,15 +1,27 @@
+import { useRef } from 'react';
 // Import Swiper styles
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { testimonials } from '../../data';
-
 import './Testimonial.css';
 
+import { useInView, motion } from 'framer-motion';
+
 const Testimonial = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="py-12 md:py-20">
+    <motion.div
+      ref={ref}
+      style={{
+        transform: isInView ? 'none' : 'translateY(200px)',
+        opacity: isInView ? 1 : 0,
+        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+      }}
+      className="py-12 md:py-20"
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col text-center">
           <p className="text-lg tracking-widest capitalize">
@@ -68,7 +80,7 @@ const Testimonial = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

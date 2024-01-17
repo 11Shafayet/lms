@@ -1,12 +1,17 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { allCategories, allCourses } from '../../data';
 import { FaStar } from 'react-icons/fa6';
 import { FaStarHalfAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Button from '../common/Button';
 
+//framer motion
+import { motion, useInView } from 'framer-motion';
+
 const TopCourses = () => {
   const [activeTab, setActiveTab] = useState('All');
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const categoryFilter = (item) => {
     if (activeTab === 'All') {
@@ -17,7 +22,15 @@ const TopCourses = () => {
   };
 
   return (
-    <div className="my-12 md:my-20">
+    <motion.div
+      ref={ref}
+      style={{
+        transform: isInView ? 'none' : 'translateY(200px)',
+        opacity: isInView ? 1 : 0,
+        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+      }}
+      className="my-12 md:my-20"
+    >
       <div className="container mx-auto px-4">
         {/* heading content */}
         <div className="text-center max-w-[600px] mx-auto">
@@ -110,7 +123,7 @@ const TopCourses = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

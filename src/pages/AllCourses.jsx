@@ -1,14 +1,21 @@
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { FaStar } from 'react-icons/fa6';
-import { allCourses } from '../data';
-import img1 from '/images/1.jpg';
 import { FaComment, FaStarHalfAlt, FaUser } from 'react-icons/fa';
 import Sidebar from '../components/courses/Sidebar';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { allCourses } from '../data';
+import img1 from '/images/1.jpg';
 
 const AllCourses = () => {
   const [searchedText, setSearchedText] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (pathname) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
 
   const filterSearch = (item) => {
     if (item.title.toLowerCase().includes(searchedText.toLowerCase())) {

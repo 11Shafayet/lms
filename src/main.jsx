@@ -14,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <AuthProvider>
       <RouterProvider router={router} />
     </AuthProvider>
+
     <ToastContainer
       position="bottom-center"
       autoClose={1000}

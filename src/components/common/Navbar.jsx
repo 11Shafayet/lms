@@ -17,7 +17,7 @@ const Navbar = () => {
   }, [pathname, setActiveNav]);
 
   return (
-    <div className="relative z-10">
+    <div className="relative z-[11111]">
       {/* topbar */}
       <div className="bg-primary text-white py-2">
         <div className="container mx-auto px-4">
@@ -35,8 +35,8 @@ const Navbar = () => {
       </div>
 
       {/* navbar */}
-      <div className="bg-white !text-secondary shadow-lg py-3">
-        <div className="container mx-auto px-4">
+      <div className="bg-white !text-secondary shadow-lg py-3 z-[11111]">
+        <div className="container mx-auto px-4 z-[11111]">
           <div className="flex justify-between items-center gap-x-4">
             <Link to="/">
               <img src={logo} alt="logo" className="max-w-[50px] h-auto" />
@@ -45,9 +45,9 @@ const Navbar = () => {
               className="block md:hidden group cursor-pointer w-11 h-6 relative"
               onClick={() => setHamActive((prev) => !prev)}
             >
-              <div className="w-11 h-0.5 bg-black block group-hover:-translate-x-3 duration-500 " />
-              <div className="w-11 h-0.5 bg-black block translate-y-1.5 group-hover:translate-x-1 duration-500 " />
-              <div className="w-11 h-0.5 bg-black block  translate-y-3 group-hover:-translate-x-3 duration-500 " />
+              <div className="w-11 h-0.5 bg-black block group-hover:-translate-x-3 duration-500" />
+              <div className="w-11 h-0.5 bg-black block translate-y-1.5 group-hover:translate-x-1 duration-500" />
+              <div className="w-11 h-0.5 bg-black block  translate-y-3 group-hover:-translate-x-3 duration-500" />
             </div>
             <ul className="hidden md:flex justify-center items-center gap-x-1">
               {navData.map((item, i) => {
@@ -68,12 +68,12 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`absolute top-36 w-full h-screen bg-white shadow-light p-4 flex justify-center items-start pt-32 duration-500 ${
-              hamActive ? 'right-0' : '-right-[150%]'
+            className={`absolute top-36 w-full h-screen bg-white bg-opacity-80 backdrop-blur-md shadow-light p-4 justify-center items-start pt-32 duration-500 z-[11111] ${
+              hamActive ? 'right-0 flex' : '-right-[150%] hidden'
             }`}
           >
             <div
-              className="absolute top-7 right-7 w-11 h-12 group cursor-pointer z-[1000]"
+              className="absolute top-7 right-7 w-11 h-12 group cursor-pointer z-[100000]"
               onClick={() => setHamActive(false)}
             >
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-0.5 bg-black block rotate-45 duration-500" />

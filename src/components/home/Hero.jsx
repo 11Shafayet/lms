@@ -9,15 +9,24 @@ import { Link } from 'react-router-dom';
 import { heroData } from '../../data';
 import Button from '../common/Button';
 
+// framer motion
+import { motion } from 'framer-motion';
+
 const Hero = () => {
   return (
-    <div className="bg-secondary py-12">
+    <motion.div
+      initial={{ translateY: 300, opacity: 0 }}
+      animate={{ translateY: 0, opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ delay: 0.3, duration: 2, type: 'spring', stiffness: 200 }}
+      className="bg-secondary py-12"
+    >
       <div className="container mx-auto px-4">
         <div className="relative  min-h-[70vh]">
-          <button className="arrow-left absolute bottom-36 left-[33%]  sm:top-1/2 sm:-translate-y-1/2 sm:left-7 border w-11 h-11 rounded-full border-primary text-white flex items-center justify-center z-[1000]">
+          <button className="arrow-left absolute bottom-36 left-[33%]  sm:top-1/2 sm:-translate-y-1/2 sm:left-7 border w-11 h-11 rounded-full border-primary text-white flex items-center justify-center z-[100]">
             <FaArrowLeftLong size={20} />
           </button>
-          <button className="arrow-right absolute bottom-36 right-[33%] sm:top-1/2 sm:-translate-y-1/2 sm:right-7 border w-11 h-11 rounded-full border-primary text-white flex items-center justify-center z-[1000]">
+          <button className="arrow-right absolute bottom-36 right-[33%] sm:top-1/2 sm:-translate-y-1/2 sm:right-7 border w-11 h-11 rounded-full border-primary text-white flex items-center justify-center z-[100]">
             <FaArrowRightLong size={20} />
           </button>
           <Swiper
@@ -39,18 +48,18 @@ const Hero = () => {
                   <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold capitalize font-secondary !leading-snug mb-12">
                     {item.title}
                   </h2>
-                  <div className="text-center mt-12 flex justify-center items-center">
+                  <motion.div className="text-center mt-12 flex justify-center items-center">
                     <Link to={`/all-courses`}>
                       <Button type={`white`}>Explore Courses</Button>
                     </Link>
-                  </div>
+                  </motion.div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

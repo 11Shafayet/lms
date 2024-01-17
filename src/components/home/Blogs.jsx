@@ -6,9 +6,22 @@ import { blogs } from '../../data';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 const Blogs = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="my-12 md:my-20">
+    <motion.div
+      ref={ref}
+      style={{
+        transform: isInView ? 'none' : 'translateY(200px)',
+        opacity: isInView ? 1 : 0,
+        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+      }}
+      className="my-12 md:my-20"
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col text-center">
           <p className="text-lg tracking-widest capitalize">
@@ -60,7 +73,7 @@ const Blogs = () => {
                     <img
                       src={item.img}
                       alt=""
-                      className="object-cover w-full"
+                      className="object-cover w-full h-[250px]"
                     />
                     <div className="p-4">
                       <h4 className="text-lg font-bold font-primary line-clamp-1 overflow-x-hidden text-ellipsis group-hover:text-primary duration-300">
@@ -78,7 +91,7 @@ const Blogs = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
